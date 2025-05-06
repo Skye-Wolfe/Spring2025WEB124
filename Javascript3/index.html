@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="CJW" />
+        <link rel="stylesheet" href="CSS/style.css" />
+        <title>Chapter 3</title>
+    </head>
+    <body class="lightmode">
+        <header class="lightmode">
+            <h1 class="lightmode">Franklin Running Club</h1>
+            <nav class="nav lightmode">
+                <ul class="lightmode">
+                    <li class="lightmode">
+                        <a href="#" class="lightmode">Home</a>
+                    </li>
+                    <li class="lightmode">
+                        <a href="#" class="lightmode">About</a>
+                    </li>
+                    <li class="lightmode">
+                        <a href="#" class="lightmode">Service</a>
+                    </li>
+                    <li class="lightmode">
+                        <a href="#" class="lightmode">FAQs</a>
+                    </li>
+                    <li class="lightmode">
+                        <a href="#" class="lightmode">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="wrapper lightmode">
+            <div class="container lightmode">
+                <main class="main lightmode">
+                    <h2 title="item2" class="lightmode">Come join us !</h2>
+                    <p class="lightmode">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, optio fuga molestias delectus
+                        vero, a? Quaerat molestiae consectetur nihil quasi voluptatem, impedit in dolorem cumque eius
+                        iusto sed deleniti et!
+                    </p>
+                    <h3 class="lightmode">Header 3</h3>
+                    <p class="lightmode">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, optio fuga molestias delectus
+                        vero, a? Quaerat molestiae consectetur nihil quasi voluptatem, impedit in dolorem cumque eius
+                        iusto sed deleniti et!
+                    </p>
+                </main>
+                <aside class="sidebar lightmode">
+                    <section class="widget lightmode">
+                        <a href="#" class="button-link lightmode"> Twitter </a>
+                    </section>
+                    <section class="widget lightmode">
+                        <a href="#" class="button-link lightmode"> Facebook </a>
+                    </section>
+                    <p class="lightmode">
+                        <a href="#" class="sponsor-link lightmode"> Become a Sponsor </a>
+                    </p>
+                </aside>
+            </div>
+            <footer class="lightmode"></footer>
+        </div>
+        <!-- end wrapper-->
+        <script>
+            const pressed = [];
+            const secretCode = "darkmode";
+            window.addEventListener("keyup", (e) => {
+                console.log(e.key);
+                pressed.push(e.key);
+                pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+                if (pressed.join("").includes(secretCode)) {
+                    console.log("Darkmode Enabled");
+                    let elemets = Array.from(document.getElementsByClassName("lightmode"));
+                    console.log(elemets);
+                    elemets.forEach((element) => element.classList.add("darkmode"));
+                }
+                console.log(pressed);
+            });
+        </script>
+    </body>
+</html>
