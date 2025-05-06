@@ -23,7 +23,7 @@ header {
 }
 
 header.darkmode {
-    color: #777 ;
+    color: #eee ;
     background-color: #00293f;
 }
 
@@ -33,7 +33,7 @@ header.darkmode {
 }
 
 .nav.darkmode {
-    background-color: #777;
+    background-color: #eee;
 }
 
 ul {
@@ -45,7 +45,7 @@ ul {
 }
 
 ul.darkmode {
-    background-color: #777;
+    background-color: #eee;
 }
 
 li {
@@ -86,7 +86,7 @@ a.darkmode {
 }
 
 .main.darkmode {
-    background-color: #777;
+    background-color: #eee;
 }
 
 .sidebar {
@@ -99,7 +99,7 @@ a.darkmode {
 }
 
 .sidebar.darkmode {
-    background-color: #777;
+    background-color: #eee;
 }
 
 .button-link {
@@ -114,7 +114,7 @@ a.darkmode {
 }
 
 .button-link.darkmode {
-    color: #777;
+    color: #eee;
     background-color: #00293f;
 }
 
@@ -123,10 +123,6 @@ a.darkmode {
     color: #0072b0;
     font-weight: bold;
     text-decoration: none;
-}
-
-.sponsor-link {
-    color: #0072b0;
 }
 
 .sponsor-link.darkmode {
